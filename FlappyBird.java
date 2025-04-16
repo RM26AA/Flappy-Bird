@@ -66,6 +66,10 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     double score = 0;
 
     FlappyBird() {
+        // Initialize the background music and start playing
+        BackgroundMusic backgroundMusic = new BackgroundMusic("src/music/gta-4-music.wav"); // Set path to your music file
+        backgroundMusic.startMusic();  // Start the background music
+
         setPreferredSize(new Dimension(boardWidth, boardHeight));
         // setBackground(Color.blue);
         setFocusable(true);
